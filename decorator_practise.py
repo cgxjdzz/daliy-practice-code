@@ -2,6 +2,9 @@ import time
 
 
 def add_100_wrapper(func):
+    '''
+    return the function result after add 100
+    '''
     def improved_func(*args, **kwargs):
         ret = func(*args, **kwargs) + 100
         return ret
@@ -15,6 +18,9 @@ def test_add_100(x):
 
 
 def repeat_5_times_wrapper(func):
+    '''
+    repeat the function for 5 times
+    '''
     def improved_func(*args, **kwargs):
         for i in range(5):
             func(*args, **kwargs)
@@ -28,6 +34,9 @@ def test_print():
 
 
 def write_func_name_time_wrapper(func):
+    '''
+    write the runtime and name of function decorated by this 
+    '''
     def improved_func(*args,**kwargs):
         with open('../timian.txt','w+') as file:
             run_time=str(time.localtime())

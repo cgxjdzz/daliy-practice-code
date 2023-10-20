@@ -1,2 +1,2 @@
 # daliy-practice-code
-save something unimportant for daliy courses or practice.
+Repository containing code for algorithm replication and Python syntax practice exercises, designed for educational and reference purposes.
